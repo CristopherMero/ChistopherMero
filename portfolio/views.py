@@ -1,8 +1,7 @@
 from django.shortcuts import render
 from .models import proyectos
 # Create your views here.
-#modelos de las aplicaciones
-#ulala
+
 
 def portfolio(request):
 
