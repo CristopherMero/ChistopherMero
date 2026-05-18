@@ -8,6 +8,7 @@ from . import views
 
 urlpatterns = [
     path('', views.AllToDos.as_view(), name='index'),
+    path('contact', views.contact, name='contact'),
     path('about', views.about, name='about'),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

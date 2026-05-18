@@ -4,6 +4,8 @@ from django.shortcuts import render
 from django.shortcuts import render
 from django.views.generic import ListView
 
+from .models import Persona
+
 from core.models import ToDoItem
 
 
@@ -13,6 +15,13 @@ class AllToDos(ListView):
 
 def index(request):
     return render(request, 'core/index.html')
+
+def contact(request):
+    persona = Persona.objects.all()
+    return render(request, 'core/contact.html', {
+        'personas': persona
+    })
+
 
 def about(request):
     return render(request, 'core/about.html')

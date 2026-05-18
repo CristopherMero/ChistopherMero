@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-@azs34=u$r*ngwfauxm^%cud154tdgffw(92z5r8*sy-4w6ct4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['CristopherMero.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -38,8 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core.apps.CoreConfig',
-    'portfolio.apps.PortfolioConfig',
-    'persona.apps.PersonaConfig'
+    'portfolio.apps.PortfolioConfig'
 ]
 
 MIDDLEWARE = [
